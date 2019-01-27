@@ -1,0 +1,25 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+.wrap {
+  background: #ad5adb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e7756a, #ad5adb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e7756a, #ad5adb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  box-sizing: border-box;
+  background: #fafafa;
+  border: 16px solid #fff;
+  max-width: 1080px;
+  height: 100vh;
+}
+
+.maincontent {
+  padding: 10px;  
+}
+.sidebar {
+  padding: 10px;
+}
