@@ -11,7 +11,7 @@
 }
 .container {
   box-sizing: border-box;
-  background: #fafafa;
+  background: #fff;
   border: 16px solid #fff;
   max-width: 1080px;
   height: 100vh;
@@ -19,7 +19,19 @@
 
 .maincontent {
   padding: 10px;  
+  background: #fafafa;
 }
 .sidebar {
   padding: 10px;
+  background: #fafafa;
+}
+.fold-width{
+  width: 125px;
+}
+
+.res {
+  display: inline-block;
+}
+span {
+  font-size: .7rem;
 }

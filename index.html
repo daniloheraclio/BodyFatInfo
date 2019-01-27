@@ -18,62 +18,168 @@
         <div class="col-lg-7 maincontent">
           <div>
             <h3>Body Fat Info</h3>
+            <h5>Skin Fold Test</h5>
           </div>
+          <hr>
           <form>
 
-            <div class="row mb-3"><!-- Name input  -->
-              <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" placeholder="Name">
+            <div class="row"><!-- Name input  -->
+              <label for="inputName" class="col-sm-2 col-form-label-sm mb-1">Name</label>
+              <div class="col-sm-10 mb-3">
+                <input type="text" class="form-control col-form-label-sm" id="inputName" placeholder="Name">
               </div>
             </div>
 
             <div class="row">
               <!-- Test day input  --> 
-              <label for="inputTestDay" class="col-sm-2 col-form-label">Test day</label>
+              <label for="inputTestDay" class="col-sm-2 col-form-label-sm mb-1">Test day</label>
               <div class="col-sm-4 mb-3">
-                <input type="date" class="form-control" id="inputTestDay" placeholder="Test day">
+                <input type="date" class="form-control col-form-label-sm" id="inputTestDay" placeholder="Test day">
               </div>
               <!-- Birthday input  -->
-              <label for="inputBirthDay" class="col-sm-2 col-form-label">Birthday</label>
+              <label for="inputBirthDay" class="col-sm-2 col-form-label-sm mb-1">Birthday</label>
               <div class="col-sm-4 mb-3">
-                <input type="date" class="form-control" id="inputBirthDay" placeholder="Birthday">
+                <input type="date" class="form-control col-form-label-sm" id="inputBirthDay" placeholder="Birthday">
               </div>
             </div>
             
             <div class="row"> 
               <!-- Actual Weight input  -->
-              <label for="inputActualWeight" class="col-sm-2 col-form-label">Weight</label>
+              <label for="inputActualWeight" class="col-sm-2 col-form-label-sm mb-1">Weight:<span>(Kg)</span></label>
               <div class="col-sm-3 mb-3">
-                <input type="number" class="form-control" id="inputActualWeight" placeholder="Weight">
+                <input type="number" class="form-control col-form-label-sm" id="inputActualWeight" placeholder="Kg">
               </div>
               <!-- Desired Weight input  -->
-              <label for="inputDesiredWeight" class="col-sm-3 col-form-label">Desired Weight</label>
+              <label for="inputDesiredWeight" class="col-sm-3 col-form-label-sm mb-1 ">Desired Weight:<span>(Kg)</span></label>
               <div class="col-sm-4 mb-3">
-                <input type="number" class="form-control" id="inputActualWeight" placeholder="Desired Weight">
+                <input type="number" class="form-control col-form-label-sm" id="inputDesiredWeight" placeholder="kg">
               </div>
             </div>
 
-            <!--  Gender input  -->
+             <!--  Gender input  --> 
             <div class="row mb-3">
-              <label for="Gender" class="col-sm-3 col-form-label">Gender</label>
-              <div class="form-check form-check-inline col-sm-2">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioMale" value="option1">
-                <label class="form-check-label" for="radioMale">Male</label>
+              <label class="col-sm-2 col-form-label ">Gender</label>
+              <div class="custom-control custom-radio ml-4 mt-2">
+                <input type="radio" id="radioMale" name="inputGender" class="custom-control-input" checked>
+                <label class="custom-control-label" for="radioMale">Male</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioFemale" value="option2">
-                <label class="form-check-label" for="radioFemale">Female</label>
+              <div class="custom-control custom-radio ml-4 mt-2">
+                <input type="radio" id="radioFemale" name="inputGender" class="custom-control-input">
+                <label class="custom-control-label" for="radioFemale">Female</label>
               </div>
             </div>
+            <hr>
+            <h5 class="mb-3">Pollock 7 folds</h5>
 
+            <div class="form align-items-center">
+              
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">Triceps</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control" id="inputTri" placeholder="" value="10">
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">Subscapular</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control fold-width" id="inputSub" placeholder="" value="10">
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">Toracixa</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control fold-width" id="inputTor" placeholder="" value="10">
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">Axila Média</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control fold-width" id="inputAxi" placeholder="" value="10">
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">SupraIliaca</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control fold-width" id="inputSup" placeholder="" value="10">
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">Abominal</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control fold-width" id="inputAbd" placeholder="" value="10">
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text fold-width">Coxa Media</div>
+                  </div>
+                  <input type="number" min="0" max="50" class="form-control fold-width" id="inputCox" placeholder="" value="10">
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- Folders input -->
+
+              <a class="btn btn-primary ml-4 mt-3" href="#" role="button" id="btnCalculate">Calculate</a>
+              <a class="btn btn-danger mt-3 ml-3" href="#" role="button">Clean fields</a> 
+              
+            
           </form>
         </div>
         <div class="col-lg-5 sidebar" >
-          <h3>Gráficos</h3>
+          <h3>Results:</h3>
+          <div>
+            <p class="res">Name:</p>
+            <p class="res" id="resName"></p>
+          </div>
+          <div>
+            <p class="res">Test Day:</p>
+            <p class="res" id="resTestDay"></p>
+          </div>
+          <div>
+            <p class="res">Birth Day:</p>
+            <p class="res" id="resBirthDay"></p>
+          </div>
+          <div>
+            <p class="res">Actual Weight:</p>
+            <p class="res" id="resActualWeight"></p>
+          </div>
+          <div>
+            <p class="res">Desired Weight:</p>
+            <p class="res" id="resDesiredWeight"></p>
+          </div>
+          <div>
+            <p class="res">Gender:</p>
+            <p class="res" id="resGender"></p>
+          </div>
+          <div>
+            <p class="res">Bodyfat:</p>
+            <p class="res" id="resBodyFat"></p>
+          </div>
+          
           <!--Chart Starts here-->
           <div class="chart-container">
-            <canvas id="lineChart"></canvas>
+            <canvas id="barChart"></canvas>
           </div>
         </div>
       </div>
@@ -81,6 +187,7 @@
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <script src="chart.js"></script>
   <script src="app.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
